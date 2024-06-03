@@ -1,0 +1,46 @@
+command line
+pwd #print working directory
+ls # show all files and folders
+clear #for clearing the screen
+cd F:// #change directory for windows
+cd Desktop # for linux
+which files in desklop write ls command
+mkdir "new python command line tutorial"
+mkdir command_dir
+mkdir mk dir fs ls #for creating more folders 
+cd command_line for moving to new folder
+touch filnename.txt
+touch ahmad.py
+cd .. for goinf to back
+pwd
+cd "new python command line tutorial"
+cd .. for back
+remove folder
+cd comm then press tab for auto complete
+rm ahmad.py for removeing file
+ls
+rm -rf commad_line for removing the folder
+rm -rf ""
+to open new file command if file have then it wil open if not it will automatically create and open file
+code open.py
+mv for moving file and renameing file
+mv open.py new_open.py # for renaming the file
+code file1.py
+mkdir fol
+ls
+for moving .py file to new folder
+mv new_open.py ./fol it will move now
+ls
+cd fol
+ls
+mv new_open.py ..  #one folder bacl
+#copy file
+cp new_open.py ./fol
+cd fol
+python new_open.py
+up error for previous commands
+down errow for previouc command
+
+git remote add origin https://github.com/ahmadhanif95/Python.git
+git branch -M main
+git push -u origin main

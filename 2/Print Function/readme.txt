@@ -1,0 +1,6 @@
+print("Hello World")
+print("Hello "world" World")
+print('Hello World')
+print("Hello 'world' World")
+print('Hello 'world' World')
+print('Hello "world" World')

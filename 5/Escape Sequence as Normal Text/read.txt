@@ -1,0 +1,8 @@
+print("line a \\n line b") treat as normal text
+print("line a \\t line b") normal text
+print("line a \\\\n line b") if we need double backslash
+ \"\' output
+ print("\\\"\\\'")
+ \' = '
+ \\=\
+ 
