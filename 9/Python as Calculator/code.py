@@ -1,0 +1,11 @@
+print(3+4)
+print(3-4)
+print(3*4)
+print(5/4)
+print(5//4)
+print(5%4)
+print(2**4)
+print(round(2**0.5),5)
+#parantheses() exxponent * / // % + -
+print((3+4)*5/2%6)
+print(2**7**2)
