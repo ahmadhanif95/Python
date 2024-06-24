@@ -9,7 +9,9 @@ print(name.center(len(name)+8,"*"))
 string="string"
 print(string[1])
 string[1]="T" # it will not change its mean it is immutable
-b=string.replace('t','T') # we change it and replace and 
+b=string.replace('t','T') 
+b=string.replace('t','T',1)
+b=string.replace('t','T',2)# we change it and replace and 
 #store into new variable so but we dont edit into string varible
 #  
 print(b)
