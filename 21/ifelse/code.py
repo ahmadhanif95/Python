@@ -10,8 +10,10 @@ if x>18:
     pass
 
 #exercide 
+import random
 print("Guess the number to win the game")
 win_no=10
+win_no = random.randint(1, 100)
 a=int(input("enter the number"))
 if win_no==a:
     print("you win the game")
