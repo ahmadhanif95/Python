@@ -169,3 +169,52 @@ def rev_ele(l):
     for i in l:
         ele.append(i[::-1])
     return ele
+
+
+#exercise list in which seprate out odd even number
+l=[1,2,3,4,5,6,7,8]
+
+def filter_odd_even(l):
+    odd=[]
+    even=[]
+    for i in l:
+        if i%2==0:
+            even.append(i)
+        else:
+            odd.append(i)
+    output=[odd,even]
+    return output
+
+filter_odd_even(l)
+
+#exercise find common number from l1 and l2
+
+def common_num(l1,l2):
+    out=[]
+    for i in l1:
+        if i in l2:
+            out.append(i)
+    return out
+
+a=[1,2,3,4,5,6,7]
+b=[1,2,3,8,9,7,5]
+commom_num(a,b)
+
+#min max function
+
+print(max(a))
+print(min(a))
+
+# find sublist in list
+def sublist(l):
+    count=0
+    for i in l:
+        if type(i)==list:
+            count+1
+    return count
+
+a=[1,2,[3,4],4,[6,7],8]
+sublist(a)
+
+
+
