@@ -31,6 +31,63 @@ for i in lens:
     print(i)
 
 #filter ffunctions
+#we can itertae map and filter one time either tuples we can iterate many times
+
+no=[1,2,3,4,5,6,7,8,9]
+print(tuple(filter(lambda a:a%2==0,no)))
+
+ne=[i for i in no if i%2==0]
+print(ne)
+
+#iterator or iterables
+#tuples string --> iterables
+a=iter(no)
+print(next(a))
+
+#iterator
+sq=map(lambda a:a**2,no)
+print(next(sq))
+print(next(no)) #error list is not iterator
+
+#zip functions
+u=['u1','u2','u3']
+name=['ahmad','ali','moiz']
+print(list(zip(u,name)))
+
+u=['u1','u2']
+name=['ahmad','ali','moiz'] #it will zip till ali
+
+# * operator with zip
+
+l=[(1,2),(3,4),(5,6),(7,8)]
+l1,l2=list(zip(*l))
+print(list(l1))
+print(list(l2))
+new_list=[]
+for pair in zip(l1,l2):
+    new_list.append(max(pair))
+
+#eexercise:
+
+def avg(*args):
+    avg=[]
+    for pair in zip(*args):
+        avg.append(sum(pair)/len(pair))
+    return avg
+l=[[1,2,3,4],[5,6,4,3],[2,4,7,8]]
+print(avg(l))
+
+#any all function
+n1=[2,4,6,8,10]
+e=[]
+for num in n1:
+    e.append(num%2==0)
+ 
+# any and all practice
+
+
+
+
 
 
 
