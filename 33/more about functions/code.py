@@ -84,12 +84,32 @@ for num in n1:
     e.append(num%2==0)
  
 # any and all practice
+print(all([num%2==0 for num in n1]))
 
+# min max
 
+#in advance data stucture
+def func(item):
+    return len(item)
 
+name=['ahmad','ali','arsalan']
+print(max(name,key=func))
 
-
-
+s={
+   'ali': {'score':90,'age':4},
+    'ahmad':{'score':100,'age':5}
+}
+max(s,key=lambda item:s[item]['score'])
+f=('b','g','a')
+#sort function will not sort the tuples
+sorted(f)
+print(f) #sorted function will not return tuple it will return list
+s1={
+   {'score':90,'age':4},
+   {'score':100,'age':5}
+}
+sorted(s1, key lambda = d:d['age'] , reverse=True)
+sorted(s1, key lambda = d:d['age'] )
 
 
 
