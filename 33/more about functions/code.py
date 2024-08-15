@@ -108,8 +108,20 @@ s1={
    {'score':90,'age':4},
    {'score':100,'age':5}
 }
-sorted(s1, key lambda = d:d['age'] , reverse=True)
-sorted(s1, key lambda = d:d['age'] )
+print(sorted(s1, key lambda = d:d['age'] , reverse=True))
+print(sorted(s1, key lambda = d:d['age'] ))
+#docstring
+def add(a,b):
+    '''this function works as this'''
+    return a+b
+
+print(add.__doc__)
+print(len.__doc__)
+print(sum.__doc__) # it will tell us what our function do
+
+print(help(sum))
+
+
 
 
 
