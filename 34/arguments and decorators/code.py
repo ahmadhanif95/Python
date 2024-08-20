@@ -129,8 +129,51 @@ def cal_time(function):
 @cal_time
 def sq(n):
     return [i**3 for i in range (1,n+1)]
-
 print(sq(1000))
 
+#practice
+from functools import wraps
+def int_allow(function):
+    @wraps(function)
+    def wrapper(*args,**kwargs):
+        data_types=[]
+        for arg in args:
+            data_types.appent(type(args==int))
+        if all(data_types):
+            return function(*args,**kwargs)
+        else:
+            print("invalid arguments")
+    return wrapper
+@int_allow
+def add_all(*args):
+    total=0
+    for i in args:
+        total=total+i
+    return total
+print(add_all(1,2,3,4,5,6))
+print(add_all(1,2,3,4,[5,6],9))
 
- 
+
+#decorator with arguments
+from functools import wraps
+def only_dtype_allow(data_types):
+    def decorator(function):
+        @wraps(function)
+        def wrapper(*args,**kwargs):
+            data_types=[]
+            for arg in args:
+                data_types.appent(type(args==data_types))
+            if all(data_types):
+                return function(*args,**kwargs)
+            else:
+                print("invalid arguments")
+        return wrapper
+    return decorator
+@only_dtype_allow(str)
+def string_join(*args):
+    string=''
+    for i in args:
+        string+=i
+    return string
+
+string_join('ahmad',' is out side')
