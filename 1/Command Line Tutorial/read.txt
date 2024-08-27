@@ -1,5 +1,16 @@
 command line
+uname -a 
+echo $HOME #it will about the detail of home diectory user
+history # we will reverse history with chronological order reverse with latest one
+ls -al|grep history
+#output -rw-------  1 ahmad ahmad     51448 اگست   27 13:57 .bash_history
+#bash will tell linux commands 
+#-rw-------  1 ahmad ahmad     51448 اگست   27 13:57 .python_history
+#it will tell me all the python commands
+tail .bash_history
+#tel last few commands of bash history
 pwd #print working directory
+ls --help
 ls # show all files and folders
 clear #for clearing the screen
 cd F:// #change directory for windows
